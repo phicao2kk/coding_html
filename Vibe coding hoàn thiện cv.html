@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Vibe Coding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+        /* Hiệu ứng cuộn mượt mà */
+        html { scroll-behavior: smooth; }
+        /* Tạo khoảng trống phía trên mỗi khi bấm vào menu điều hướng */
+        section { scroll-margin-top: 60px; }
+        @keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+.animate-shine {
+    animation: shine 3s linear infinite;
+}
+@keyframes shine-slow {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+.animate-shine-slow {
+    animation: shine-slow 4s linear infinite;
+}
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed relative">
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+        <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-100">
+            <source src="https://res.cloudinary.com/drqnbdzx4/video/upload/v1772519461/2697038-uhd_3840_2160_30fps_k2qdnz.mp4" type="video/mp4">
+        </video>
+    </div>
+<section id="Introduce" class="space-y-8"></section>  
+   <nav class="sticky top-0 z-50 bg-slate-950/20 backdrop-blur-md border-b border-white/10 py-4">
+    <div class="max-w-4xl mx-auto px-6 flex justify-between items-center">
+        <span class="font-bold text-xl tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-slate-200 via-blue-400 to-slate-200 bg-[length:200%_auto] animate-shine-slow cursor-default">
+            Thông Tin Cá Nhân
+        </span>
+
+        <div class="flex space-x-0 text-sm font-semibold">
+            <a href="#Introduce" class="hover-sound-effect click-sound-effect group px-4 py-2 rounded-lg transition-all duration-300">
+                <span class="text-slate-300 group-hover:text-blue-400 transition-colors relative">
+                    Giới thiệu
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                </span>
+            </a>
+            
+            <a href="#Certificate" class="hover-sound-effect click-sound-effect group px-4 py-2 rounded-lg transition-all duration-300">
+                <span class="text-slate-300 group-hover:text-blue-400 transition-colors relative">
+                    Chứng chỉ
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                </span>
+            </a>
+
+            <a href="#skills" class="hover-sound-effect click-sound-effect group px-4 py-2 rounded-lg transition-all duration-300">
+                <span class="text-slate-300 group-hover:text-blue-400 transition-colors relative">
+                    Kỹ năng
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                </span>
+            </a>
+
+            <a href="#projects" class="hover-sound-effect click-sound-effect group px-4 py-2 rounded-lg transition-all duration-300">
+                <span class="text-slate-300 group-hover:text-blue-400 transition-colors relative">
+                    Dự án
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                </span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 space-y-8">       
+    <div class="flex items-center gap-6">
+        <img src="https://i.ibb.co/wrpfFfqd/H-ng.jpg" alt="Cao Nguyễn Hồng Phi" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-lg">
+        <div>
+            <div class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold tracking-wider uppercase mb-2">
+            Sẵn sàng cho các thử thách mới
+            </div>
+            <h1 class="text-5xl font-extrabold tracking-tight text-white lg:text-6xl">
+            Chào, mình là <span class="text-transparent bg-clip-text bg-gradient-to-r from-slate-100 via-blue-400 to-slate-100 bg-[length:200%_auto] animate-shine">
+    Cao Nguyễn Hồng Phi
+</span>
+            </h1>
+        </div>
+    </div>
+            <p class="text-xl text-white max-w-5xl leading-relaxed">
+                Software Engineer chuyên về hệ thống và thuật toán. Mình yêu thích việc biến những dòng code phức tạp thành những trải nghiệm mượt mà.
+            </p>
+</section>
+
+        <section id="Certificate" class="space-y-8"></section>
+        <h2 class="text-2xl font-bold border-b-2 border-blue-500 inline-block text-transparent bg-clip-text bg-gradient-to-r from-slate-100 via-blue-400 to-slate-100 bg-[length:200%_auto] animate-shine-slow">
+    Chứng chỉ
+</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+               <a href="https://i.ibb.co/cKQLnsXW/Ch-ng-ch-code-org.jpg" target="_blank" class="hover-sound-effect click-sound-effect group px-4 py-2 rounded-lg transition-all duration-300">
+                    <div class="p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl group-hover:text-blue-200 group-hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]">                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-600/80">Code.org Express</h3>
+                        </div>
+                        <p class="text-[12px] text-slate-300 mb-2">Chứng chỉ hoàn thành khóa học lập trình căn bản.</p>
+                        <span class="text-[10px] text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">Xem chi tiết →</span>
+                    </div>
+                </a>
+                <a href="https://i.ibb.co/3561Wxxm/Ch-ng-ch-Ph-n-c-ng-m-y-t-nh.png" target="_blank" class="hover-sound-effect click-sound-effect group px-4 py-2 rounded-lg transition-all duration-300">
+                    <div class="p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl group-hover:text-blue-200 group-hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]">                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-600/80">Phần cứng máy tính</h3>
+                        </div>
+                        <p class="text-[12px] text-slate-300 mb-2">Chứng chỉ hoàn thành khóa học Phần cứng máy tính.</p>
+                        <span class="text-[10px] text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">Xem chi tiết →</span>
+                    </div>
+                </a>
+                <a href="https://i.ibb.co/CgKGgBZ/Ch-ng-ch-Ph-n-m-m-m-y-t-nh.png" target="_blank" class="hover-sound-effect click-sound-effect group px-4 py-2 rounded-lg transition-all duration-300">
+                    <div class="p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl group-hover:text-blue-200 group-hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]">                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-600/80">Phần mềm máy tính</h3>
+                        </div>
+                        <p class="text-[12px] text-slate-300 mb-2">Chứng chỉ hoàn thành khóa học Phần mềm máy tính.</p>
+                        <span class="text-[10px] text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">Xem chi tiết →</span>
+                    </div>
+                </a>
+                <a href="https://i.ibb.co/gZH1g37d/Ch-ng-ch-C-u-tr-c-d-li-u-v-gi-i-thu-t.png" target="_blank" class="hover-sound-effect click-sound-effect group px-4 py-2 rounded-lg transition-all duration-300">
+                    <div class="p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl group-hover:text-blue-200 group-hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]">                        <div class="flex items-center justify-between mb-1">  
+                            <h3 class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-600/80">Cấu trúc dữ liệu và giải thuật</h3>
+                        </div>
+                        <p class="text-[12px] text-slate-300 mb-2">Chứng chỉ hoàn thành khóa học Cấu trúc dữ liệu và giải thuật.</p>
+                        <span class="text-[10px] text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">Xem chi tiết →</span>
+                    </div>
+                </a>
+                 <a href="https://i.ibb.co/ksRzKRtS/Ch-ng-ch-Truy-n-th-ng-v-M-ng-m-y-t-nh.png" target="_blank" class="hover-sound-effect click-sound-effect group px-4 py-2 rounded-lg transition-all duration-300">
+                    <div class="p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl group-hover:text-blue-200 group-hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]">                        <div class="flex items-center justify-between mb-1">  
+                            <h3 class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-600/80">Truyền thông và Mạng máy tính</h3>
+                        </div>
+                        <p class="text-[12px] text-slate-300 mb-2">Chứng chỉ Truyền thông và Mạng máy tính.</p>
+                        <span class="text-[10px] text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">Xem chi tiết →</span>
+                    </div>
+                </a>
+                 <a href="https://i.ibb.co/0V8rgrps/Ch-ng-ch-i-n-to-n-m-m-y.png" target="_blank" class="hover-sound-effect click-sound-effect group px-4 py-2 rounded-lg transition-all duration-300">
+                    <div class="p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl group-hover:text-blue-200 group-hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]">                        <div class="flex items-center justify-between mb-1">  
+                            <h3 class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-600/80">Điện toán đám mây</h3>
+                        </div>
+                        <p class="text-[12px] text-slate-300 mb-2">Chứng chỉ Điện toán đám mây.</p>
+                        <span class="text-[10px] text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">Xem chi tiết →</span>
+                    </div>
+                </a>
+                    <a href="https://i.ibb.co/ymMRKhCb/Ch-ng-ch-Thu-t-to-n-c-n-b-n.png" target="_blank" class="hover-sound-effect click-sound-effect group px-4 py-2 rounded-lg transition-all duration-300">
+                    <div class="p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl group-hover:text-blue-200 group-hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]">                        <div class="flex items-center justify-between mb-1">  
+                            <h3 class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-600/80">Thuật toán căn bản</h3>
+                        </div>
+                        <p class="text-[12px] text-slate-300 mb-2">Chứng chỉ Thuật toán căn bản.</p>
+                        <span class="text-[10px] text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">Xem chi tiết →</span>
+                    </div>
+                </a>
+                <a href="https://i.ibb.co/zV5znSbv/Ch-ng-ch-Gemini.png" target="_blank" class="hover-sound-effect click-sound-effect group px-4 py-2 rounded-lg transition-all duration-300">
+                    <div class="p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl group-hover:text-blue-200 group-hover:drop-shadow-[0_0_12px_rgba(59,130,246,0.8)]">                        <div class="flex items-center justify-between mb-1">  
+                            <h3 class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-600/80">Gemini Certified Student</h3>
+                        </div>
+                        <p class="text-[12px] text-slate-300 mb-2">Chứng chỉ hoàn thành khóa học Sinh viên đạt chuẩn Gemini.</p>
+                        <span class="text-[10px] text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">Xem chi tiết →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="skills" class="space-y-8"></section>
+       <h2 class="text-2xl font-bold border-b-2 border-blue-500 inline-block text-transparent bg-clip-text bg-gradient-to-r from-slate-100 via-blue-400 to-slate-100 bg-[length:200%_auto] animate-shine-slow">
+    Kỹ năng cốt lõi
+</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="hover-sound-effect p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl cursor-pointer">
+    <h3 class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-600/80">
+        Ngôn ngữ lập trình
+    </h3>
+    <p class="text-sm text-slate-300">C++, Python</p>
+</div>
+<div class="hover-sound-effect p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl cursor-pointer">
+    <h3 class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-600/80">
+        Kỹ năng Tư duy
+    </h3>
+    <p class="text-sm text-slate-300">Giải quyết vấn đề, Tư duy phân tích, Tư duy sáng tạo</p>
+</div>
+
+<div class="hover-sound-effect p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl cursor-pointer">
+    <h3 class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-600/80">
+        Kỹ năng Số
+    </h3>
+    <p class="text-sm text-slate-300">Tư duy máy tính, Sử dụng công nghệ</p>
+</div>
+
+<div class="hover-sound-effect p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl cursor-pointer">
+    <h3 class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-blue-600/80">
+        Kỹ năng Mềm
+    </h3>
+    <p class="text-sm text-slate-300">Kỹ năng giao tiếp, Sự kiên trì, Khả năng tự học</p>
+</div>
+            </div>
+        </section>
+
+        <section id="projects" class="space-y-8"></section>
+       <h2 class="text-2xl font-bold border-b-2 border-blue-500 inline-block text-transparent bg-clip-text bg-gradient-to-r from-slate-100 via-blue-400 to-slate-100 bg-[length:200%_auto] animate-shine-slow">
+    Dự án tâm đắc
+</h2>
+           <div class="space-y-4">
+    <div class="hover-sound-effect p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl cursor-pointer group">
+        <div class="flex justify-between items-start">
+            <div>
+                 <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white from-10% to-blue-500">
+                    Personal profile
+                </h3>
+                <p class="text-slate-300 mt-2 text-sm leading-relaxed">
+                    Personal Profile giúp nhà tuyển dụng biết ngay bạn là ai, bạn có kinh nghiệm gì và bạn có phù hợp với vị trí họ đang tìm hay không mà không cần đọc hết cả trang giấy.
+                </p>
+            </div>
+            <span class="text-xs font-mono bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">♡</span>
+        </div>
+    </div>
+</div>
+<h2 class="text-2xl font-bold border-b-2 border-blue-500 inline-block text-transparent bg-clip-text bg-gradient-to-r from-slate-100 via-blue-400 to-slate-100 bg-[length:200%_auto] animate-shine-slow">
+    Dự án đang nghiên cứu
+</h2>
+          <div class="space-y-4">
+    <div class="hover-sound-effect p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl cursor-pointer group">
+        <div class="flex justify-between items-start">
+            <div>
+                 <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white from-10% to-blue-500">
+                    SOS
+                </h3>
+                <p class="text-slate-300 mt-2 text-sm leading-relaxed">Xây dựng một nền tảng hỗ trợ khẩn cấp, giúp người dùng tiếp cận các dịch vụ y tế và cứu trợ nhanh nhất trong "thời điểm vàng" dựa trên vị trí thực tế.</p>
+            </div>
+            <span class="text-xs font-mono bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">♡</span>
+        </div>
+    </div>
+
+    <div class="hover-sound-effect p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl cursor-pointer group">
+        <div class="flex justify-between items-start">
+            <div>
+             <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white from-10% to-blue-500">
+    Appointment Scheduling
+</h3>
+                <p class="text-slate-300 mt-2 text-sm leading-relaxed">Hệ thống đặt lịch giúp người dùng ghi rõ nội dung cần hỗ trợ, giúp lãnh đạo nắm bắt vấn đề và chuẩn bị tài liệu trước, tối ưu hóa hiệu quả cuộc gặp.</p>
+            </div>
+            <span class="text-xs font-mono bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">♡</span>
+        </div>
+    </div>
+
+    <div class="hover-sound-effect p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl cursor-pointer group">
+        <div class="flex justify-between items-start">
+            <div>
+                <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white from-10% to-blue-500">
+                    Queue Management
+                </h3>
+                <p class="text-slate-300 mt-2 text-sm leading-relaxed">Đảm bảo tính minh bạch trong thứ tự ưu tiên, tránh tình trạng chen lấn và giúp kiểm soát luồng người tiếp cận bộ phận hỗ trợ một cách khoa học.</p>
+            </div>
+            <span class="text-xs font-mono bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">♡</span>
+        </div>
+    </div>
+
+    <div class="hover-sound-effect p-4 rounded-xl shadow-sm border border-white/5 bg-white/5 backdrop-blur-sm group-hover:border-blue-800/60 group-hover:bg-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-blue-900/30 hover:shadow-xl cursor-pointer group">
+        <div class="flex justify-between items-start">
+            <div>
+                 <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white from-10% to-blue-500">
+                    Office Hours / Liaison
+                </h3>
+                <p class="text-slate-300 mt-2 text-sm leading-relaxed">Kênh liên lạc chính thống qua thư ký và văn phòng tổng hợp, giúp sắp xếp lịch trình làm việc và tiếp nhận thông tin đầu vào một cách chuyên nghiệp.</p>
+            </div>
+            <span class="text-xs font-mono bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">♡</span>
+        </div>
+    </div>
+</div>
+        </section>
+
+    </main>
+
+<footer class="relative py-16 mt-20 border-t border-white/5 bg-slate-950/20 backdrop-blur-md">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+        
+       <p class="font-bold italic tracking-wide text-lg text-transparent bg-clip-text bg-gradient-to-r from-slate-300 via-blue-500 to-slate-300 bg-[length:200%_auto] animate-shine-slow cursor-default">
+    <span class="text-slate-600 opacity-40">"</span>
+    Mã nguồn sạch, tư duy sáng.
+    <span class="text-slate-600 opacity-40">"</span>
+</p>
+        
+      <div class="flex justify-center items-center gap-6">
+    <a href="https://facebook.com/phicao2kk" target="_blank" 
+       class="block group hover-sound-effect click-sound-effect"> <div class="flex flex-col items-center justify-center w-20 h-20 rounded-2xl border border-white/5 bg-white/5 backdrop-blur-sm group-hover:bg-blue-500/10 group-hover:border-blue-500/50 group-hover:-translate-y-1 transition-all duration-300 shadow-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover:text-blue-500 group-hover:scale-110 transition-all">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+            <span class="text-[10px] mt-2 text-slate-500 group-hover:text-blue-400 uppercase tracking-[0.2em] font-bold">FB</span>
+        </div>
+    </a>
+
+    <a href="https://zalo.me/0978877125" target="_blank" 
+       class="block group hover-sound-effect click-sound-effect"> <div class="flex flex-col items-center justify-center w-20 h-20 rounded-2xl border border-white/5 bg-white/5 backdrop-blur-sm group-hover:bg-blue-400/10 group-hover:border-blue-400/50 group-hover:-translate-y-1 transition-all duration-300 shadow-xl">
+            <div class="w-6 h-6 flex items-center justify-center font-bold border-2 border-slate-400 text-slate-400 rounded-full text-[10px] group-hover:border-blue-400 group-hover:text-blue-400 group-hover:scale-110 transition-all">Z</div>
+            <span class="text-[10px] mt-2 text-slate-500 group-hover:text-blue-400 uppercase tracking-[0.2em] font-bold">Zalo</span>
+        </div>
+    </a>
+
+    <a href="mailto:Phicao2kk@gmail.com" 
+       class="block group hover-sound-effect click-sound-effect"> <div class="flex flex-col items-center justify-center w-20 h-20 rounded-2xl border border-white/5 bg-white/5 backdrop-blur-sm group-hover:bg-red-500/10 group-hover:border-red-500/50 group-hover:-translate-y-1 transition-all duration-300 shadow-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-400 group-hover:text-red-400 group-hover:scale-110 transition-all">
+                <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <span class="text-[10px] mt-2 text-slate-500 group-hover:text-red-400 uppercase tracking-[0.2em] font-bold">Email</span>
+        </div>
+    </a>
+</div>
+        
+        <div class="pt-8 border-t border-white/5 text-[11px] text-slate-500 tracking-widest uppercase">
+            © 2026 <span class="text-white/30">|</span> Thiết kế bởi <span class="text-blue-400/60 font-semibold">Cao Nguyễn Hồng Phi</span>
+        </div>
+    </div>
+</footer>
+
+<audio id="hover-audio" preload="auto">
+    <source src="https://files.catbox.moe/3f7vb0.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    // 1. Cấu hình âm thanh Hover (Lướt qua - nhẹ nhàng)
+    const hoverSfx = new Audio('https://files.catbox.moe/3f7vb0.mp3');
+    hoverSfx.volume = 0.4; // Để nhỏ để không gây khó chịu
+
+    // 2. Cấu hình âm thanh Click (Nhấp chuột - dứt khoát)
+    const clickSfx = new Audio('https://files.catbox.moe/opoahd.mp3');
+    clickSfx.volume = 0.5;
+
+    // Gán sự kiện Hover
+    document.querySelectorAll('.hover-sound-effect').forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            hoverSfx.currentTime = 0;
+            hoverSfx.play().catch(() => {}); // Catch lỗi nếu trình duyệt chặn tự động phát
+        });
+    });
+
+    // Gán sự kiện Click
+    document.querySelectorAll('.click-sound-effect').forEach(el => {
+        el.addEventListener('click', () => {
+            clickSfx.currentTime = 0;
+            clickSfx.play().catch(() => {});
+        });
+    });
+</script>
+
+</body>
+</html>
